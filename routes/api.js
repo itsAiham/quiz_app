@@ -2,6 +2,8 @@ const express = require("express");
 const _ = require('underscore');
 const router = express.Router();
 
+
+// the users is not user in the app, can retrived user api
 const users = [
   {
     id: 1,
@@ -46,24 +48,6 @@ const quizes = [
 ];
 
 let answers = [];
-//   quizID: 0,
-//   body: [
-//     {
-//       question: "What is the languages/tools used in front-end?",
-//       answers: ["python"],
-//     },
-//     {
-//       question:
-//         "Between the following, What is programming language used in back-end?",
-//       answers: ["python"],
-//     },
-//     {
-//       question: "What is the name of the uni which provides front-end course",
-//       answers: ["python"],
-//     },
-//   ],
-//   userID: 1,
-// };
 
 const db = {
   user: users,
