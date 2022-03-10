@@ -1,0 +1,81 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 10fr);
+  grid-template-rows: repeat(10, 10fr);
+}
+
+#questionInput {
+  grid-row: 2 / 4;
+  grid-column: 1 / -1;
+  font-size: larger;
+}
+
+.choice {
+  margin: 0;
+  grid-row: 0/ -1;
+  grid-column: 5 / 10;
+}
+
+#quiz-type {
+  grid-row: 2 / 7;
+  grid-column: 7 / 9;
+}
+
+.choice > input {
+  margin-right: 10px;
+}
+
+.form-btn {
+  grid-row: 9 / -1;
+  grid-column: 6 / 9;
+}
+
+#done-btn {
+  grid-row: 9 / -1;
+  grid-column: 3 / 5;
+}
+
+#done-btn,
+.form-btn,
+#add-choice-btn {
+  border-radius: 1rem;
+  background: hsl(208, 37%, 48%, 0.8);
+  font-size: larger;
+  color: hsl(244, 52%, 94%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+#add-choice-btn {
+  grid-row: 4 / 4;
+  grid-column: 10 / -1;
+}
+
+.option {
+  grid-row: 6 / 8;
+  grid-column: 1 / -1;
+}
+
+.quiz-choice {
+  z-index: 6;
+}
+
+.quiz-choice {
+  height: 3rem;
+  width: 30%;
+  margin: 0.4rem 5%;
+  font-size: larger;
+}
+
+#nbr_question {
+  margin-left: 6rem;
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <form class="container start">
+      <label for="fname" class="start-info">Enter Your Name</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        class="input"
+        placeholder="Name"
+      />
+      <label for="email" class="start-info">Enter Your Email</label>
+      <input
+        id="email"
+        type="text"
+        name="email"
+        class="input"
+        placeholder="Email"
+      />
+      <label for="password" class="start-info">Enter Your Password</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        class="input"
+        placeholder="Password"
+      />
+      <input
+        type="button"
+        id="btn"
+        class="btn"
+        value="Log in"
+        onclick="validateInput(document.getElementById('name').value, 
+                                    document.getElementById('email').value, 
+                                    document.getElementById('password').value)"
+      />
+    </form>
+    <script src="./src/validator.js"></script>
+  </body>
+</html>
