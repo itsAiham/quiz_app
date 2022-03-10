@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*    colors     */
+  --clr-dark: 176 31% 55%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+
+  --clr-bkack: 292 12% 17%;
+  --clr-blue: 208 37% 48%;
+
+  /*     font-sizes    */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /*    font-fanilies    */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--fs-500);
+}
+
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  background: url("../img/q_mark.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container,
+.start {
+  justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  width: 40%;
+  height: 30rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid wheat;
+  border-radius: 25px;
+}
+
+.container > input {
+  bottom: 0;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.start-info {
+  color: hsl(var(--clr-white));
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.input {
+  width: 80%;
+  font-size: var(--fs-400);
+}
+
+.btn {
+  width: 35%;
+  color: hsl(var(--clr-blue));
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    background-size: auto;
+  }
+
+  .container,
+  .start {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 45px;
+  }
+}

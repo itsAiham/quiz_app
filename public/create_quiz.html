@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/quiz.css" />
+    <link rel="stylesheet" href="./style/create_quiz.css" />
+    <title>New Quiz</title>
+  </head>
+  <body>
+    <ul class="header">
+      <li class="h-list"><a class="nav-icon" href="/">Singout</a></li>
+      <li class="h-list"><a class="nav-icon" href="./home.html">Home</a></li>
+    </ul>
+
+    <form id="quiz_form" class="container" method="POST" action="/api/answers">
+      <label id="question" class="q-label" for="question">
+        Enter The Question <span id="nbr_question"></span>
+      </label>
+      <input
+        type="text"
+        name="question"
+        id="questionInput"
+        placeholder=" Add Quiz Question"
+      />
+
+      <input type="button" value="+" id="add-choice-btn" />
+      <div class="choice" id="quiz-type-container">
+        <input id="text" type="radio" name="type" value="text" />Text
+        <input id="radio" type="radio" name="type" value="radio" />Radio
+        <input
+          id="checkbox"
+          type="radio"
+          name="type"
+          value="checkbox"
+        />Checkbox
+      </div>
+      <div class="option" id="choices-container"></div>
+
+      <input class="form-btn" type="button" id="add-btn" value="Add Question" />
+      <input class="form-btn" type="button" id="done-btn" value="Done" />
+    </form>
+
+    <script src="./src/add_quiz.js"></script>
+  </body>
+</html>
